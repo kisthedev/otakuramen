@@ -1,0 +1,369 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     background-color: rgb(255, 255, 255);
+ }
+ 
+ header {
+     background-image: url('../images/ramenbanner.jpg');
+     background-size: cover;
+     background-position: 50% 50%;
+     background-attachment: fixed;
+     color: rgb(250, 235, 215);
+     font-weight: 500;
+     height: 1000px;
+ }
+ 
+ h1 {
+     margin-top: 20px;
+     font-size: 4em;
+     line-height: 200px;
+     height: 200px;
+     text-align: center;
+ }
+ 
+ h2 {
+     margin: auto;
+     margin-top: 150px;
+     font-size: 1.5em;
+     line-height: 50px;
+     height: 50px;
+     min-width: 150px;
+     max-width: 200px;
+     text-align: center;
+     border: 3px solid rgb(250, 235, 215);
+ }
+ 
+ h2:hover {
+     background-color: rgb(250, 235, 215);
+     color: rgb(128, 0, 0);
+ }
+ 
+ h2 a:visited {
+     text-decoration: none;
+     color: rgb(250, 235, 215);
+ }
+ 
+ h3 {
+     color: rgb(128, 0, 0);
+     margin: auto;
+     margin-top: 150px;
+     font-size: 3em;
+     line-height: 50px;
+     height: 50px;
+     min-width: 150px;
+     text-align: center;
+ }
+ 
+ h4 {
+     color: rgb(128, 0, 0);
+     margin: auto;
+     font-size: 2em;
+     text-align: center;
+     font-weight: normal;
+     opacity: 0.5;
+     padding-top: 10px;
+ }
+ /* drop down nav bar */
+ 
+ nav {
+     background-color: rgb(128, 0, 0);
+     background-image: url(../images/ramenicon.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 100%;
+     z-index: 2;
+ }
+ 
+ nav a {
+     float: right;
+     font-size: 16px;
+     color: rgb(250, 235, 215);
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+ /*dropdown icon */
+ 
+ .dropdownlines {
+     display: inline-block;
+     width: 150px;
+     padding-left: 45%;
+ }
+ 
+ .bar1,
+ .bar2,
+ .bar3 {
+     max-width: 35px;
+     height: 5px;
+     background-color: rgb(0, 0, 0);
+     margin: 4px 0;
+ }
+ 
+ .dropdown {
+     float: right;
+     background-color: rgb(128, 0, 0);
+     overflow: hidden;
+ }
+ 
+ .dropdown .dropbtn {
+     font-size: 16px;
+     border: none;
+     outline: none;
+     color: rgb(255, 69, 0);
+     padding: 14px 16px;
+     background-color: inherit;
+     font-family: inherit;
+ }
+ 
+ .navbar a:hover,
+ .dropdown:hover .dropbtn {
+     background-color: rgb(255, 69, 0);
+ }
+ 
+ .dropdown-content {
+     display: none;
+     background-color: rgb(128, 0, 0);
+     min-width: 200px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 0.2);
+     z-index: 1;
+     position: absolute;
+ }
+ 
+ .dropdown-content a {
+     float: none;
+     color: rgb(228, 162, 138);
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: center;
+ }
+ 
+ .dropdown-content a:hover {
+     background-color: rgb(250, 235, 215);
+ }
+ 
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+ /* SECTION 2 - Find Your Flavor grid */
+ 
+ article.menu {
+     background-color: rgb(250, 235, 215);
+     max-width: 900px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: 0px auto;
+ }
+ 
+ article.menu img {
+     width: 300px;
+     height: 400px;
+ }
+ 
+ div.section5 img {
+     object-fit: cover;
+ }
+ 
+ div.section2,
+ div.section4,
+ div.section6 {
+     font-size: 115%;
+     line-height: 1.4;
+     letter-spacing: 0.2em;
+     max-width: 200px;
+     height: 300px;
+     margin: 50px 50px;
+ }
+ /*Section 3, About Section */
+ 
+ .about {
+     background-color: rgb(250, 235, 215);
+     padding-top: 25px;
+     padding-bottom: 100px;
+ }
+ 
+ .about p {
+     margin: auto;
+     font-size: 1.5em;
+     max-width: 900px;
+     text-align: center;
+     opacity: 0.5;
+ }
+ 
+ .hours {
+     text-align: center;
+     color: rgb(128, 0, 0);
+     opacity: 0.75;
+     font-size: 1.5em;
+ }
+ 
+ .narutogif {
+     padding-top: 50px;
+     display: block;
+     margin: auto;
+ }
+ 
+ div.ordernowlink {
+     margin: auto;
+     margin-top: 15px;
+     background-color: rgb(128, 0, 0);
+     color: rgb(250, 235, 215);
+     text-align: center;
+     font-size: 1.5em;
+     line-height: 50px;
+     height: 50px;
+     width: 200px;
+     border: 3px solid rgb(128, 0, 0);
+ }
+ 
+ div.ordernowlink:hover {
+     background-color: rgb(255, 255, 255);
+     color: rgb(128, 0, 0);
+ }
+ /* Section 4, Meet The Chef */
+ 
+ article.meetthechef {
+     text-align: center;
+ }
+ 
+ div.chefpic {
+     width: 400px;
+     height: 400px;
+     overflow: hidden;
+     border-radius: 50%;
+     margin: auto;
+ }
+ 
+ .gennipic {
+     display: block;
+     border-radius: 50%;
+     margin-left: -15%;
+ }
+ 
+ article.meetthechef p {
+     margin: auto;
+     font-size: 1.5em;
+     max-width: 900px;
+     opacity: 0.5;
+     padding: 10%;
+ }
+ /* Menu Table */
+ 
+ table {
+     margin: auto;
+     width: 900px;
+ }
+ 
+ th {
+     background-color: rgb(128, 0, 0);
+     color: rgb(255, 255, 255);
+     font-size: 1.5em;
+ }
+ 
+ th,
+ td {
+     padding: 15px;
+     text-align: left;
+     border-bottom: 1px dotted rgb(128, 0, 0);
+ }
+ 
+ tr:nth-child(even) {
+     background-color: rgb(255, 255, 255);
+ }
+ 
+ tr:hover {
+     background-color: rgb(228, 162, 138);
+     color: rgb(250, 235, 215);
+ }
+ 
+ .menudropdown {
+     position: relative;
+     display: inline-block;
+ }
+ 
+ .menudropdown-content {
+     display: none;
+     position: absolute;
+     background-color: rgb(128, 0, 0);
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     padding: 12px 16px;
+     z-index: 2;
+ }
+ 
+ .menudropdown:hover .menudropdown-content {
+     display: block;
+ }
+ 
+ .ordernowlink {
+     margin: auto;
+     margin-top: 50px;
+     font-size: 1.5em;
+     line-height: 50px;
+     height: 50px;
+     min-width: 150px;
+     max-width: 200px;
+     text-align: center;
+     border: 3px solid rgb(128, 0, 0);
+     color: rgb(128, 0, 0);
+ }
+ 
+ .ordernowlink:hover {
+     background-color: rgb(128, 0, 0);
+     color: rgb(250, 235, 215);
+ }
+ /* Contact Form */
+ 
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid rgb(204, 204, 204);
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+ }
+ 
+ input[type=submit] {
+     background-color: rgb(128, 0, 0);
+     color: rgb(250, 235, 215);
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     ;
+ }
+ 
+ input[type=submit]:hover {
+     background-color: rgb(250, 235, 215);
+     color: rgb(128, 0, 0);
+ }
+ 
+ .container {
+     border-radius: 5px;
+     background-color: rgb(255, 255, 255);
+     padding: 20px;
+ }
+ /* FOOTER */
+ 
+ footer {
+     background-color: rgb(128, 0, 0);
+     width: 100%;
+     color: rgb(0, 0, 0);
+     font-size: 1.5em;
+     text-align: center;
+     padding-top: 10px;
+     line-height: 1.4;
+ }
